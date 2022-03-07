@@ -1,0 +1,9 @@
+@import "../../styles/global/variables";
+@import "../../styles/global/mixins";
+
+.photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}

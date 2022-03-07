@@ -1,5 +1,10 @@
 import { combineReducers } from "redux";
 
+import { searchReducer } from "./search/search-reducer";
+
+import { suggestionsReducer } from "./suggestions/suggestions.reducer";
+
 export default combineReducers({
-  dummy: () => "replace me",
+  search: searchReducer,
+  suggestions: suggestionsReducer,
 });

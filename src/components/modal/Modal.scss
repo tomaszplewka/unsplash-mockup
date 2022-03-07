@@ -1,0 +1,83 @@
+@import "../../styles/global/variables";
+@import "../../styles/global/mixins";
+
+.modal {
+  &__wrapper {
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    background-color: rgba($black, 0.25);
+  }
+
+  &__container {
+    background-color: $white;
+    border-radius: 0.5rem;
+    margin: 3rem auto;
+    max-width: 66%;
+
+    @include respond-below(lg) {
+      max-width: 75%;
+    }
+
+    @include respond-below(sm) {
+      max-width: 90%;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    max-width: 500px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__author {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 1rem;
+
+      &__avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+
+        img {
+          border-radius: 50%;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &__name {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+
+    &__location,
+    &__created-at {
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+    }
+
+    &__location {
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../styles/global/variables";
+@import "../../styles/global/mixins";
+
+.photos-list {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 2rem;
+
+  @include respond-below(lg) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  &__error,
+  &__load-more {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  &__error {
+    color: $error;
+  }
+
+  &__load-more {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+$white: #f8f8f8;
+$black: #040403;
+$gray: #a7a6a6;
+$focus: #3626a7;
+$error: #b80c09;
+
+$font-family: "Roboto", sans-serif;
+
+$transition: all 0.3s ease-out;
+
+$breakpoints: (
+  xxs: 420px,
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px,
+  hd: 1440px,
+  beforehd: 1790px,
+  fullhd: 1920px,
+);
