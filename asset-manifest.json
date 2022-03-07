@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/unsplash-mockup/static/css/main.e94d3033.css",
+    "main.js": "/unsplash-mockup/static/js/main.9995b3c1.js",
+    "static/media/front-page-bg.jpg": "/unsplash-mockup/static/media/front-page-bg.784ac3ed3bc4fa21c1e0.jpg",
+    "index.html": "/unsplash-mockup/index.html",
+    "main.e94d3033.css.map": "/unsplash-mockup/static/css/main.e94d3033.css.map",
+    "main.9995b3c1.js.map": "/unsplash-mockup/static/js/main.9995b3c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e94d3033.css",
+    "static/js/main.9995b3c1.js"
+  ]
+}
